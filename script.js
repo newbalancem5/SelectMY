@@ -1,5 +1,5 @@
 const month = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
-const years = [2017, 2018, 2019];
+const years = [2017, 2018, 2019, 2020, 2021 ];
 const date = new Date(),
       m = date.getMonth() + 1,
       y = date.getFullYear();
@@ -23,9 +23,9 @@ for(let i = 0; i <= yearIndex; i++) {
   yearSelect.add(option)
 }
 
-var m12, mx;
+let m12, mx;
 for(let i = 0; i < 12; i++) {
-		var option = addOption(i + 1, month[i]);
+		const option = addOption(i + 1, month[i]);
 		if(i < m){
 			 mx += option.outerHTML;
 			 monthSelect.add(option);
